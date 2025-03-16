@@ -6,7 +6,7 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
   const password = document.getElementById("password").value;
 
   // Cek validasi login (contoh: username: admin, password: 12345)
-  if (username === "admin" && password === "12345") {
+  if (username === "Sherlock's" && password === "1978") {
       alert("Login berhasil!");
       document.getElementById("loginPage").style.display = "none";
       document.getElementById("dialogPage").style.display = "block";
