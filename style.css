@@ -9,7 +9,7 @@ body {
   height: 100vh;
   background: url('background.jpeg') no-repeat center center fixed; /* Latar belakang utama */
   background-size: cover;
-  color: #FFFFFF; /* Warna hijau untuk teks */
+  color: #00ff00; /* Warna hijau untuk teks */
   overflow: hidden;
 }
 
@@ -46,7 +46,7 @@ input {
   border: 1px solid #555; /* Warna abu-abu gelap untuk border */
   border-radius: 4px;
   background-color: #222; /* Warna hitam untuk input */
-  color: #FFFFFF; /* Warna hijau untuk teks input */
+  color: #00ff00; /* Warna hijau untuk teks input */
   box-sizing: border-box;
 }
 
@@ -109,7 +109,7 @@ button:hover {
   text-align: left;
   word-wrap: break-word;
   font-size: 16px;
-  color: #00ff00; /* Warna hijau untuk teks dialog */
+  color: #F8F8FF; /* Warna hijau untuk teks dialog */
 }
 
 /* Gaya untuk efek tembakan */
