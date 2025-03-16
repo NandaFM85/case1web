@@ -46,7 +46,7 @@ input {
   border: 1px solid #555; /* Warna abu-abu gelap untuk border */
   border-radius: 4px;
   background-color: #222; /* Warna hitam untuk input */
-  color: #00ff00; /* Warna hijau untuk teks input */
+  color: #FFFFFF; /* Warna hijau untuk teks input */
   box-sizing: border-box;
 }
 
