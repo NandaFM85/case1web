@@ -1,0 +1,142 @@
+/* Gaya umum */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url('background.jpeg') no-repeat center center fixed; /* Latar belakang utama */
+  background-size: cover;
+  color: #00ff00; /* Warna hijau untuk teks */
+  overflow: hidden;
+}
+
+/* Halaman Login */
+.login-container {
+  background-color: rgba(0, 0, 0, 0.8); /* Warna hitam dengan transparansi */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 255, 0, 0.5); /* Efek bayangan hijau */
+  width: 300px;
+  text-align: center;
+  backdrop-filter: blur(5px); /* Efek blur untuk latar belakang */
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #00ff00; /* Warna hijau untuk judul */
+}
+
+.input-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+label {
+  font-size: 14px;
+  color: #00ff00; /* Warna hijau untuk label */
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #555; /* Warna abu-abu gelap untuk border */
+  border-radius: 4px;
+  background-color: #222; /* Warna hitam untuk input */
+  color: #00ff00; /* Warna hijau untuk teks input */
+  box-sizing: border-box;
+}
+
+input::placeholder {
+  color: #00ff00; /* Warna hijau untuk placeholder */
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #00ff00; /* Warna hijau untuk tombol */
+  color: black;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #00cc00; /* Warna hijau lebih gelap saat hover */
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+  display: none;
+}
+
+/* Halaman Dialog */
+.dialog-container {
+  width: 90%;
+  max-width: 500px;
+  background: rgba(0, 0, 0, 0.8); /* Transparansi untuk dialog */
+  padding: 20px;
+  border-radius: 10px;
+  overflow-y: auto;
+  max-height: 70%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  background: url('cctv.jpg') no-repeat center center; /* Latar belakang CCTV rusak */
+  background-size: cover;
+  position: relative;
+  z-index: 10;
+}
+
+.dialog-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.dialog-container::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 4px;
+}
+
+.dialog-line {
+  margin-bottom: 15px;
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  text-align: left;
+  word-wrap: break-word;
+  font-size: 16px;
+  color: #00ff00; /* Warna hijau untuk teks dialog */
+}
+
+/* Gaya untuk efek tembakan */
+.dialog-line.gunshot {
+  color: red;
+  font-weight: bold;
+  text-shadow: 0 0 10px red;
+}
+
+/* Gaya dialog akhir */
+.dialog-line.final {
+  border: 2px solid red;
+  padding: 10px;
+  text-align: center;
+  margin-top: 20px;
+  color: #00ff00; /* Warna hijau untuk teks akhir */
+}
+
+/* Responsif */
+@media (max-width: 600px) {
+  .dialog-container, .login-container {
+      width: 95%;
+      padding: 15px;
+      max-height: 80%;
+  }
+
+  .dialog-line {
+      font-size: 14px;
+  }
+}
