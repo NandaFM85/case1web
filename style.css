@@ -9,7 +9,7 @@ body {
   height: 100vh;
   background: url('background.jpeg') no-repeat center center fixed; /* Latar belakang utama */
   background-size: cover;
-  color: #00ff00; /* Warna hijau untuk teks */
+  color: #FFFFFF; /* Warna hijau untuk teks */
   overflow: hidden;
 }
 
